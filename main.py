@@ -165,7 +165,7 @@ def main():
         my_circle.move(command)
 
         # Enemy spawning logic
-        if len(active_enemies) < 3 and np.random.rand() < 0.03:  # Adjust the probability as needed
+        if len(active_enemies) < 3 and np.random.rand() < 0.03:
             new_enemy = spawn_enemy(disp.width, disp.height)
             active_enemies.append(new_enemy)
 
